@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta name="description" content="Webpage description goes here" />
+  <meta name="description" content="Webpage description goes here">
   <meta charset="utf-8">
   <title>Stuff</title>
   <meta name="author" content="S">
@@ -22,13 +22,13 @@
   <a href="https://github.com/ordinaryfailure-github">Github</a>
   <br>
   <p>Discord:</p>
-  <p id="discord" onclick="CopyStuff()">឵឵឵S#4441</p>
+  <p id="discord" onclick="copyStuff()">឵឵឵S#4441</p>
   <!-- <button onclick="copyToClipboard('#discord')">Copy discord stuff</button> -->
   <p>Email: ordinaryfailure.secure@protonmail.com</p>
   <p>Currently not much on this site</p>
 
   <script>
-    function CopyStuff() {
+    function copyStuff() {
       var copyText = document.getElementById("discord");
       copyText.select();
       copyText.setSelectionRange(0, 99999)
