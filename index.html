@@ -17,20 +17,22 @@
   <br>
   <a href="https://youtube.com/channel/UCEZtQT870RJosI47kHXryvA/">Youtube</a>
   <br>
+  <a href="https://open.spotify.com/user/grnsw56tyx3xotprunssz2hwk?si=CDWa_ykWSFGDI23-SzWHAA">Spotify</a>
+  <br>
+  <a href="https://github.com/ordinaryfailure-github">Github</a>
+  <br>
   <p>Discord:</p>
-  <p id="discord">឵឵឵S#4441</p>
-  <button onclick="copyToClipboard('#discord')">Copy discord stuff</button>
+  <p id="discord" onclick="CopyStuff()">឵឵឵S#4441</p>
+  <!-- <button onclick="copyToClipboard('#discord')">Copy discord stuff</button> -->
   <p>Email: ordinaryfailure.secure@protonmail.com</p>
   <p>Currently not much on this site</p>
 
   <script>
-    function copyToClipboard(element) {
-      alert("Why you had to click this button is because my name is weird, thanks for understanding");
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($(element).text()).select();
+    function CopyStuff() {
+      var copyText = document.getElementById("discord");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999)
       document.execCommand("copy");
-      $temp.remove();
       document.getElementById("discord").innerHTML = "Copied";
     }
   </script>
