@@ -29,11 +29,14 @@
 
   <script>
     function copyStuff() {
-      var copyText = document.getElementById("discord");
-      copyText.select();
-      copyText.setSelectionRange(0, 99999)
+      var copyText = document.getElementById("discord").innerHTML;
+      var elem = document.createElement("textarea");
+      document.body.appendChild(elem);
+      elem.value = text;
+      elem.select();
       document.execCommand("copy");
-      document.getElementById("discord").innerHTML = "Copied";
+      document.body.removeChild(elem);
+      copyText = "Copied";
     }
   </script>
 </body>
