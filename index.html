@@ -6,39 +6,59 @@
   <meta charset="utf-8">
   <title>Stuff</title>
   <meta name="author" content="S">
-  <link rel="stylesheet" href="css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
-<body>
-  <a href="https://ordinaryfailure.itch.io/">Itch</a>
-  <br>
-  <a href="https://opengameart.org/users/ordinaryfailure">OpenGameArt</a>
-  <br>
-  <a href="https://twitch.tv/ordinaryfailure/">Twitch</a>
-  <br>
-  <a href="https://youtube.com/channel/UCEZtQT870RJosI47kHXryvA/">Youtube</a>
-  <br>
-  <a href="https://open.spotify.com/user/grnsw56tyx3xotprunssz2hwk?si=CDWa_ykWSFGDI23-SzWHAA">Spotify</a>
-  <br>
-  <a href="https://github.com/ordinaryfailure-github">Github</a>
-  <br>
-  <p>Discord (click text): <a id="discord" onclick="copyStuff()" style="text-decoration: underline red wavy;">឵឵឵S#4441</a></p>
-  <!-- <button onclick="copyToClipboard('#discord')">Copy discord stuff</button> -->
-  <p>Email: ordinaryfailure.secure@protonmail.com</p>
-  <p>Currently not much on this site</p>
+<style>
+  .content {
+    text-align: center;
+    color: white;
+  }
+  
+  .hrefs {
+  	font-size: 25px;
+	text-decoration: underline red;
+    background: white;
+    color: black;
+  }
+  
+  body {
+  	background: black;
+    background-image: linear-gradient(90deg, black, white);
+  }
+</style>>
 
-  <script>
-    function copyStuff() {
-      var copyText = document.getElementById("discord").innerHTML;
-      var elem = document.createElement("textarea");
-      document.body.appendChild(elem);
-      elem.value = copyText;
-      elem.select();
-      document.execCommand("copy");
-      document.body.removeChild(elem);
-      alert("copied text")
-    }
-  </script>
-</body>
+<div class="content">
+  <body>
+    <a class="hrefs" href="https://ordinaryfailure.itch.io/">Itch</a>
+    <br>
+    <a class="hrefs" href="https://opengameart.org/users/ordinaryfailure">OpenGameArt</a>
+    <br>
+    <a class="hrefs" href="https://twitch.tv/ordinaryfailure/">Twitch</a>
+    <br>
+    <a class="hrefs" href="https://youtube.com/channel/UCEZtQT870RJosI47kHXryvA/">Youtube</a>
+    <br>
+    <a class="hrefs" href="https://open.spotify.com/user/grnsw56tyx3xotprunssz2hwk?si=CDWa_ykWSFGDI23-SzWHAA">Spotify</a>
+    <br>
+    <a class="hrefs" href="https://github.com/ordinaryfailure-github">Github</a>
+    <br><br><br><br><br>
+    <p>Discord (click text): <a class="hrefs" id="discord" onclick="copyStuff()">឵឵឵S#4441</a></p>
+    <!-- <button onclick="copyStuff()">Copy discord stuff</button> -->
+    <p>Email: ordinaryfailure.secure@protonmail.com</p>
+    <p>Currently not much on this site</p>
+
+    <script>
+      function copyStuff() {
+        var copyText = document.getElementById("discord").innerHTML;
+        var elem = document.createElement("textarea");
+        document.body.appendChild(elem);
+        elem.value = copyText;
+        elem.select();
+        document.execCommand("copy");
+        document.body.removeChild(elem);
+        alert("copied text")
+      }
+    </script>
+  </body>
+</div>>
 </html>
